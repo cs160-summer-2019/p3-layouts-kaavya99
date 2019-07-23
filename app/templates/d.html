@@ -12,9 +12,40 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+     <style>
+       html, body {
+         background-color: purple;
+       }
+      .flex-container {
+        
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        
+        
+      }
+      
+      .rectangle {
+        background-color: orange;
+        height:600px;
+        width: 300px;
+        margin: 10px;
+      }
+    </style>
+    
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+    <div class="flex-container">
+      <div class="rectangle"> </div>
+      <div class="rectangle"> </div>
+      <div class="rectangle"> </div>
+      
+     
+     
+    </div>
 	</body>
 </html>
